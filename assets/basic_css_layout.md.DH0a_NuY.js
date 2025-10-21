@@ -1,4 +1,4 @@
-import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=JSON.parse('{"title":"布局与响应式","description":"","frontmatter":{},"headers":[{"level":2,"title":"一般布局","slug":"一般布局","link":"#一般布局","children":[{"level":3,"title":"文档流（正常流）","slug":"文档流-正常流","link":"#文档流-正常流","children":[]},{"level":3,"title":"浮动（float）和清除浮动","slug":"浮动-float-和清除浮动","link":"#浮动-float-和清除浮动","children":[]},{"level":3,"title":"定位","slug":"定位","link":"#定位","children":[]}]},{"level":2,"title":"Flexbox 弹性布局","slug":"flexbox-弹性布局","link":"#flexbox-弹性布局","children":[{"level":3,"title":"基本概念","slug":"基本概念","link":"#基本概念","children":[]},{"level":3,"title":"容器属性","slug":"容器属性","link":"#容器属性","children":[]},{"level":3,"title":"项目属性","slug":"项目属性","link":"#项目属性","children":[]},{"level":3,"title":"常用布局示例","slug":"常用布局示例","link":"#常用布局示例","children":[]}]},{"level":2,"title":"Grid 布局","slug":"grid-布局","link":"#grid-布局","children":[{"level":3,"title":"基本网格","slug":"基本网格","link":"#基本网格","children":[]},{"level":3,"title":"容器属性","slug":"容器属性-1","link":"#容器属性-1","children":[]},{"level":3,"title":"项目属性","slug":"项目属性-1","link":"#项目属性-1","children":[]},{"level":3,"title":"常见布局模式","slug":"常见布局模式","link":"#常见布局模式","children":[]}]},{"level":2,"title":"响应式布局","slug":"响应式布局","link":"#响应式布局","children":[{"level":3,"title":"使用相对单位","slug":"使用相对单位","link":"#使用相对单位","children":[]},{"level":3,"title":"图片","slug":"图片","link":"#图片","children":[]},{"level":3,"title":"媒体查询","slug":"媒体查询","link":"#媒体查询","children":[]},{"level":3,"title":"响应式网格","slug":"响应式网格","link":"#响应式网格","children":[]}]}],"relativePath":"basic/css/layout.md","filePath":"basic/css/layout.md"}'),o={name:"basic/css/layout.md"};function e(c,s,t,i,r,E){return p(),a("div",null,[...s[0]||(s[0]=[l(`<div style="display:none;" hidden="true" aria-hidden="true">Are you an LLM? You can read better optimized documentation at /basic/css/layout.md for this page in Markdown format</div><h1 id="布局与响应式" tabindex="-1">布局与响应式 <a class="header-anchor" href="#布局与响应式" aria-label="Permalink to &quot;布局与响应式&quot;">​</a></h1><h2 id="一般布局" tabindex="-1">一般布局 <a class="header-anchor" href="#一般布局" aria-label="Permalink to &quot;一般布局&quot;">​</a></h2><h3 id="文档流-正常流" tabindex="-1">文档流（正常流） <a class="header-anchor" href="#文档流-正常流" aria-label="Permalink to &quot;文档流（正常流）&quot;">​</a></h3><p>文档流是浏览器默认的 HTML 元素排列方式，遵循以下规则：</p><ul><li>块级元素从上到下排列</li><li>行内元素从左到右排列</li><li>元素按照在 HTML 中的出现顺序显示</li></ul><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#6A737D;">/* 块级元素示例 */</span></span>
+import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=JSON.parse('{"title":"布局与响应式","description":"","frontmatter":{},"headers":[{"level":2,"title":"一般布局","slug":"一般布局","link":"#一般布局","children":[{"level":3,"title":"文档流（正常流）","slug":"文档流-正常流","link":"#文档流-正常流","children":[]},{"level":3,"title":"浮动（float）和清除浮动","slug":"浮动-float-和清除浮动","link":"#浮动-float-和清除浮动","children":[]},{"level":3,"title":"定位","slug":"定位","link":"#定位","children":[]}]},{"level":2,"title":"Flexbox 弹性布局","slug":"flexbox-弹性布局","link":"#flexbox-弹性布局","children":[{"level":3,"title":"基本概念","slug":"基本概念","link":"#基本概念","children":[]},{"level":3,"title":"容器属性","slug":"容器属性","link":"#容器属性","children":[]},{"level":3,"title":"项目属性","slug":"项目属性","link":"#项目属性","children":[]},{"level":3,"title":"常用布局示例","slug":"常用布局示例","link":"#常用布局示例","children":[]}]},{"level":2,"title":"Grid 布局","slug":"grid-布局","link":"#grid-布局","children":[{"level":3,"title":"基本网格","slug":"基本网格","link":"#基本网格","children":[]},{"level":3,"title":"容器属性","slug":"容器属性-1","link":"#容器属性-1","children":[]},{"level":3,"title":"常见布局模式","slug":"常见布局模式","link":"#常见布局模式","children":[]}]},{"level":2,"title":"响应式布局","slug":"响应式布局","link":"#响应式布局","children":[{"level":3,"title":"使用相对单位","slug":"使用相对单位","link":"#使用相对单位","children":[]},{"level":3,"title":"图片","slug":"图片","link":"#图片","children":[]},{"level":3,"title":"媒体查询","slug":"媒体查询","link":"#媒体查询","children":[]},{"level":3,"title":"响应式网格","slug":"响应式网格","link":"#响应式网格","children":[]}]}],"relativePath":"basic/css/layout.md","filePath":"basic/css/layout.md"}'),e={name:"basic/css/layout.md"};function o(c,s,t,i,r,E){return p(),a("div",null,[...s[0]||(s[0]=[l(`<div style="display:none;" hidden="true" aria-hidden="true">Are you an LLM? You can read better optimized documentation at /basic/css/layout.md for this page in Markdown format</div><h1 id="布局与响应式" tabindex="-1">布局与响应式 <a class="header-anchor" href="#布局与响应式" aria-label="Permalink to &quot;布局与响应式&quot;">​</a></h1><h2 id="一般布局" tabindex="-1">一般布局 <a class="header-anchor" href="#一般布局" aria-label="Permalink to &quot;一般布局&quot;">​</a></h2><h3 id="文档流-正常流" tabindex="-1">文档流（正常流） <a class="header-anchor" href="#文档流-正常流" aria-label="Permalink to &quot;文档流（正常流）&quot;">​</a></h3><p>文档流是浏览器默认的 HTML 元素排列方式，遵循以下规则：</p><ul><li>块级元素从上到下排列</li><li>行内元素从左到右排列</li><li>元素按照在 HTML 中的出现顺序显示</li></ul><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#6A737D;">/* 块级元素示例 */</span></span>
 <span class="line"><span style="color:#85E89D;">div</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#79B8FF;">  display</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">block</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 默认值 */</span></span>
 <span class="line"><span style="color:#79B8FF;">  width</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">100</span><span style="color:#F97583;">%</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 默认占满父容器宽度 */</span></span>
@@ -59,7 +59,7 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span>| 父容器(非 static)                  |</span></span>
 <span class="line"><span>| +-------------------------------+ |</span></span>
 <span class="line"><span>| |      +--------+               | |</span></span>
-<span class="line"><span>| |      | 绝对定位 |               | |</span></span>
+<span class="line"><span>| |      | 绝对定位 |              | |</span></span>
 <span class="line"><span>| |      |   元素  |               | |</span></span>
 <span class="line"><span>| |      +--------+               | |</span></span>
 <span class="line"><span>| +-------------------------------+ |</span></span>
@@ -68,11 +68,11 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span style="color:#79B8FF;">  bottom</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">20</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">;</span></span>
 <span class="line"><span style="color:#79B8FF;">  right</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">20</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">;</span></span>
 <span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre></div><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>+-----------------------------------+</span></span>
-<span class="line"><span>| 浏览器窗口                          |</span></span>
+<span class="line"><span>| 浏览器窗口                         |</span></span>
 <span class="line"><span>| +-------------------------------+ |</span></span>
 <span class="line"><span>| |      +--------+               | |</span></span>
-<span class="line"><span>| |      | 绝对定位 |               | |</span></span>
-<span class="line"><span>| |      |   元素  |               | |</span></span>
+<span class="line"><span>| |      | 绝对定位 |              | |</span></span>
+<span class="line"><span>| |      |   元素  |              | |</span></span>
 <span class="line"><span>| |      +--------+               | |</span></span>
 <span class="line"><span>| +-------------------------------+ |</span></span>
 <span class="line"><span>+-----------------------------------+</span></span></code></pre></div><p><strong>粘滞定位</strong>：超出设定的边界条件时，相对于滚动容器进行定位</p><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#B392F0;">.sticky</span><span style="color:#E1E4E8;"> {</span></span>
@@ -82,7 +82,7 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span style="color:#79B8FF;">  left</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">20</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 当相对于滚动容器的left小于 20时，则固定到20 */</span></span>
 <span class="line"><span style="color:#79B8FF;">  right</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">20</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 当相对于滚动容器的right小于 20时，则固定到20 */</span></span>
 <span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre></div><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>  ┌───────────────────────────────┐</span></span>
-<span class="line"><span>  │ 内容顶部 (已超出容器)            │</span></span>
+<span class="line"><span>  │ 内容顶部 (已超出容器)           │</span></span>
 <span class="line"><span>  | （sticky元素原位置）            |</span></span>
 <span class="line"><span>+-|-----------------------------──|---+</span></span>
 <span class="line"><span>| |      +--------+               |   |</span></span>
@@ -92,12 +92,12 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span>| |                               |   |</span></span>
 <span class="line"><span>| |                               |   |</span></span>
 <span class="line"><span>| +-------------------------------+   |</span></span>
-<span class="line"><span>|       滚动容器                        |</span></span>
+<span class="line"><span>|       滚动容器                       |</span></span>
 <span class="line"><span>+-------------------------------------+</span></span></code></pre></div><h2 id="flexbox-弹性布局" tabindex="-1">Flexbox 弹性布局 <a class="header-anchor" href="#flexbox-弹性布局" aria-label="Permalink to &quot;Flexbox 弹性布局&quot;">​</a></h2><h3 id="基本概念" tabindex="-1">基本概念 <a class="header-anchor" href="#基本概念" aria-label="Permalink to &quot;基本概念&quot;">​</a></h3><ul><li>主轴（Main Axis）flex 布局元素的</li><li>交叉轴（Cross Axis）</li></ul><p>默认情况</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>                    主轴 (Main Axis) ---&gt;</span></span>
 <span class="line"><span>交叉轴 (Cross Axis)  |   +---------------------------+  ←  start</span></span>
 <span class="line"><span>         |          |   |    Flex 容器 (Container)   |</span></span>
 <span class="line"><span>         |          |   | +----+  +----+  +----+    |</span></span>
-<span class="line"><span>         |          |   | |项目1|  |项目2|  |项目3|   |</span></span>
+<span class="line"><span>         |          |   | |项目1|  |项目2| |项目3|   |</span></span>
 <span class="line"><span>         |          |   | +----+  +----+  +----+    |</span></span>
 <span class="line"><span>         |          |   |                           |</span></span>
 <span class="line"><span>         V          |   +---------------------------+  ←  end</span></span>
@@ -141,7 +141,6 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span style="color:#9ECBFF;">    &#39;sidebar main aside&#39;</span></span>
 <span class="line"><span style="color:#9ECBFF;">    &#39;footer footer footer&#39;</span><span style="color:#E1E4E8;">;</span></span>
 <span class="line"><span style="color:#79B8FF;">  gap</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">20</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 网格间距 */</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre></div><h3 id="项目属性-1" tabindex="-1">项目属性 <a class="header-anchor" href="#项目属性-1" aria-label="Permalink to &quot;项目属性&quot;">​</a></h3><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#B392F0;">.item</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#79B8FF;">  grid-column</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">1</span><span style="color:#E1E4E8;"> / </span><span style="color:#79B8FF;">3</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 列范围 */</span></span>
 <span class="line"><span style="color:#79B8FF;">  grid-row</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">1</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 行位置 */</span></span>
 <span class="line"><span style="color:#79B8FF;">  grid-area</span><span style="color:#E1E4E8;">: header; </span><span style="color:#6A737D;">/* 区域名称 */</span></span>
@@ -157,7 +156,24 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span>|           |                       |</span></span>
 <span class="line"><span>|  侧边栏    |        主要内容         |</span></span>
 <span class="line"><span>|           |                       |</span></span>
-<span class="line"><span>+-----------+-----------------------+</span></span></code></pre></div><h2 id="响应式布局" tabindex="-1">响应式布局 <a class="header-anchor" href="#响应式布局" aria-label="Permalink to &quot;响应式布局&quot;">​</a></h2><h3 id="使用相对单位" tabindex="-1">使用相对单位 <a class="header-anchor" href="#使用相对单位" aria-label="Permalink to &quot;使用相对单位&quot;">​</a></h3><p>由于各种尺寸的设备都有，使用<code>px</code>这一固定单位不能在每种尺寸上适用，因此需要使用相对单位。</p><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#85E89D;">body</span><span style="color:#E1E4E8;"> {</span></span>
+<span class="line"><span>+-----------+-----------------------+</span></span></code></pre></div><h4 id="瀑布流布局" tabindex="-1">瀑布流布局 <a class="header-anchor" href="#瀑布流布局" aria-label="Permalink to &quot;瀑布流布局&quot;">​</a></h4><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>┌───────┼───────┼───────┐</span></span>
+<span class="line"><span>│ ┌───┐ │ ┌───┐ │ ┌───┐ │</span></span>
+<span class="line"><span>│ │ 1 │ │ │ 2 │ │ │ 3 │ │</span></span>
+<span class="line"><span>│ │   │ │ │   │ │ │   │ │</span></span>
+<span class="line"><span>│ │   │ │ │   │ │ │   │ │</span></span>
+<span class="line"><span>│ |   | │ └───┘ │ └───┘ │</span></span>
+<span class="line"><span>│ └───┘ │ ┌───┐ │ ┌───┐ │</span></span>
+<span class="line"><span>│ ┌───┐ │ | 5 | │ |   | │</span></span>
+<span class="line"><span>│ │ 4 │ │ │   │ │ │ 6 │ │</span></span>
+<span class="line"><span>│ │   │ │ └───┘ │ │   │ │</span></span>
+<span class="line"><span>│ │   │ │ ┌───┐ | │   | │</span></span>
+<span class="line"><span>│ └───┘ │ │   │ │ └───┘ │</span></span>
+<span class="line"><span>│ ┌───┐ │ │   │ │ ┌───┐ │</span></span>
+<span class="line"><span>│ |   | │ │ 8 │ │ │ 9 │ │</span></span>
+<span class="line"><span>│ │ 7 │ │ │   │ │ │   │ │</span></span>
+<span class="line"><span>│ │   │ │ │   │ │ │   │ │</span></span>
+<span class="line"><span>│ └───┘ │ │   │ │ │   │ │</span></span>
+<span class="line"><span>└───────┴───────┴───────┴</span></span></code></pre></div><h2 id="响应式布局" tabindex="-1">响应式布局 <a class="header-anchor" href="#响应式布局" aria-label="Permalink to &quot;响应式布局&quot;">​</a></h2><h3 id="使用相对单位" tabindex="-1">使用相对单位 <a class="header-anchor" href="#使用相对单位" aria-label="Permalink to &quot;使用相对单位&quot;">​</a></h3><p>由于各种尺寸的设备都有，使用<code>px</code>这一固定单位不能在每种尺寸上适用，因此需要使用相对单位。</p><div class="language-css"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#85E89D;">body</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#79B8FF;">  font-size</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">16</span><span style="color:#F97583;">px</span><span style="color:#E1E4E8;">; </span><span style="color:#6A737D;">/* 基准字体大小 */</span></span>
 <span class="line"><span style="color:#E1E4E8;">}</span></span>
 <span class="line"></span>
@@ -269,4 +285,4 @@ import{_ as n,c as a,o as p,b as l}from"./chunks/framework.3z4p0y-m.js";const d=
 <span class="line"><span>桌面：</span></span>
 <span class="line"><span>+-----+-----------+-----+</span></span>
 <span class="line"><span>|  1  |     2     |  3  |</span></span>
-<span class="line"><span>+-----+-----------+-----+</span></span></code></pre></div>`,62)])])}const F=n(o,[["render",e]]);export{d as __pageData,F as default};
+<span class="line"><span>+-----+-----------+-----+</span></span></code></pre></div>`,62)])])}const F=n(e,[["render",o]]);export{d as __pageData,F as default};
