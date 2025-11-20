@@ -1,0 +1,4 @@
+---
+url: /mobile/basic.md
+---
+
