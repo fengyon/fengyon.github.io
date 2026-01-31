@@ -1,0 +1,79 @@
+import{_ as s,c as n,o as e,b as l}from"./chunks/framework.CMLuPXeo.js";const u=JSON.parse('{"title":"Vite","description":"","frontmatter":{},"headers":[{"level":2,"title":"核心概念","slug":"核心概念","link":"#核心概念","children":[{"level":3,"title":"传统打包器的问题","slug":"传统打包器的问题","link":"#传统打包器的问题","children":[]},{"level":3,"title":"Vite 的解决方案","slug":"vite-的解决方案","link":"#vite-的解决方案","children":[]}]},{"level":2,"title":"架构设计","slug":"架构设计","link":"#架构设计","children":[{"level":3,"title":"开发环境与生产环境分离","slug":"开发环境与生产环境分离","link":"#开发环境与生产环境分离","children":[]},{"level":3,"title":"依赖预构建","slug":"依赖预构建","link":"#依赖预构建","children":[]}]},{"level":2,"title":"性能优势","slug":"性能优势","link":"#性能优势","children":[{"level":3,"title":"服务器启动速度","slug":"服务器启动速度","link":"#服务器启动速度","children":[]},{"level":3,"title":"热模块更新","slug":"热模块更新","link":"#热模块更新","children":[]}]},{"level":2,"title":"功能特性","slug":"功能特性","link":"#功能特性","children":[{"level":3,"title":"开箱即用支持","slug":"开箱即用支持","link":"#开箱即用支持","children":[]},{"level":3,"title":"插件系统","slug":"插件系统","link":"#插件系统","children":[]}]},{"level":2,"title":"使用方式","slug":"使用方式","link":"#使用方式","children":[{"level":3,"title":"快速创建项目","slug":"快速创建项目","link":"#快速创建项目","children":[]},{"level":3,"title":"开发命令","slug":"开发命令","link":"#开发命令","children":[]}]},{"level":2,"title":"技术原理","slug":"技术原理","link":"#技术原理","children":[{"level":3,"title":"基于 ESM 的开发服务器","slug":"基于-esm-的开发服务器","link":"#基于-esm-的开发服务器","children":[]},{"level":3,"title":"按需编译","slug":"按需编译","link":"#按需编译","children":[]}]},{"level":2,"title":"生态系统","slug":"生态系统","link":"#生态系统","children":[{"level":3,"title":"框架支持","slug":"框架支持","link":"#框架支持","children":[]},{"level":3,"title":"插件生态","slug":"插件生态","link":"#插件生态","children":[]}]},{"level":2,"title":"配置示例","slug":"配置示例","link":"#配置示例","children":[{"level":3,"title":"基础配置","slug":"基础配置","link":"#基础配置","children":[]}]},{"level":2,"title":"适用场景","slug":"适用场景","link":"#适用场景","children":[{"level":3,"title":"理想使用场景","slug":"理想使用场景","link":"#理想使用场景","children":[]},{"level":3,"title":"注意事项","slug":"注意事项","link":"#注意事项","children":[]}]}],"relativePath":"engineering/build/vite.md","filePath":"engineering/build/vite.md"}'),p={name:"engineering/build/vite.md"};function i(t,a,c,o,r,d){return e(),n("div",null,[...a[0]||(a[0]=[l(`<div style="display:none;" hidden="true" aria-hidden="true">Are you an LLM? You can read better optimized documentation at /engineering/build/vite.md for this page in Markdown format</div><h1 id="vite" tabindex="-1">Vite <a class="header-anchor" href="#vite" aria-label="Permalink to &quot;Vite&quot;">​</a></h1><p>Vite 是下一代前端构建工具，由 Vue.js 创始人尤雨溪于 2019 年开发，旨在解决传统 JavaScript 工具在大型项目中面临的启动缓慢和热更新延迟等性能瓶颈。其名称源于法语单词“Vite”，意为“快速”，精准体现了工具的核心优势。</p><h2 id="核心概念" tabindex="-1">核心概念 <a class="header-anchor" href="#核心概念" aria-label="Permalink to &quot;核心概念&quot;">​</a></h2><h3 id="传统打包器的问题" tabindex="-1">传统打包器的问题 <a class="header-anchor" href="#传统打包器的问题" aria-label="Permalink to &quot;传统打包器的问题&quot;">​</a></h3><p>基于打包器的构建工具在开发服务器启动前必须优先抓取并构建整个应用。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>传统工具 (Webpack等):</span></span>
+<span class="line"><span>[源码] -&gt; [打包器整体打包] -&gt; [捆绑构建] -&gt; [启动服务器]</span></span>
+<span class="line"><span>       ↓</span></span>
+<span class="line"><span>   速度随项目增大而显著变慢</span></span></code></pre></div><h3 id="vite-的解决方案" tabindex="-1">Vite 的解决方案 <a class="header-anchor" href="#vite-的解决方案" aria-label="Permalink to &quot;Vite 的解决方案&quot;">​</a></h3><p>Vite 利用浏览器原生 ES 模块系统，采用按需编译模式。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>Vite 工作流程:</span></span>
+<span class="line"><span>[浏览器请求] -&gt; [Vite 服务器拦截] -&gt; [按需编译模块] -&gt; [返回ES模块]</span></span>
+<span class="line"><span>          ↓</span></span>
+<span class="line"><span>      无需预先打包，极速启动</span></span></code></pre></div><h2 id="架构设计" tabindex="-1">架构设计 <a class="header-anchor" href="#架构设计" aria-label="Permalink to &quot;架构设计&quot;">​</a></h2><h3 id="开发环境与生产环境分离" tabindex="-1">开发环境与生产环境分离 <a class="header-anchor" href="#开发环境与生产环境分离" aria-label="Permalink to &quot;开发环境与生产环境分离&quot;">​</a></h3><p>Vite 在开发和生产阶段采用不同的构建策略，充分发挥各自优势。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>开发环境:</span></span>
+<span class="line"><span>[原生ESM] -&gt; [按需编译] -&gt; [快速HMR]</span></span>
+<span class="line"><span>      ↓</span></span>
+<span class="line"><span>   基于ESBuild，速度极快</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>生产环境:</span></span>
+<span class="line"><span>[Rollup打包] -&gt; [代码分割] -&gt; [优化输出]</span></span>
+<span class="line"><span>        ↓</span></span>
+<span class="line"><span>   成熟的打包优化</span></span></code></pre></div><h3 id="依赖预构建" tabindex="-1">依赖预构建 <a class="header-anchor" href="#依赖预构建" aria-label="Permalink to &quot;依赖预构建&quot;">​</a></h3><p>Vite 通过依赖预构建优化第三方模块的加载性能。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>依赖处理流程:</span></span>
+<span class="line"><span>[检测依赖] -&gt; [Esbuild预构建] -&gt; [单模块合并] -&gt; [缓存优化]</span></span>
+<span class="line"><span>       ↓</span></span>
+<span class="line"><span>   减少网络请求，提升加载速度</span></span></code></pre></div><h2 id="性能优势" tabindex="-1">性能优势 <a class="header-anchor" href="#性能优势" aria-label="Permalink to &quot;性能优势&quot;">​</a></h2><h3 id="服务器启动速度" tabindex="-1">服务器启动速度 <a class="header-anchor" href="#服务器启动速度" aria-label="Permalink to &quot;服务器启动速度&quot;">​</a></h3><p>Vite 的冷启动速度比传统打包器快数十倍，尤其在大项目中差异更明显。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>启动时间对比:</span></span>
+<span class="line"><span>小型项目: Webpack(3s) vs Vite(0.5s)</span></span>
+<span class="line"><span>大型项目: Webpack(90s) vs Vite(3s)</span></span></code></pre></div><h3 id="热模块更新" tabindex="-1">热模块更新 <a class="header-anchor" href="#热模块更新" aria-label="Permalink to &quot;热模块更新&quot;">​</a></h3><p>Vite 提供精确的 HMR，保持应用状态的同时快速更新变化模块。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>HMR 过程:</span></span>
+<span class="line"><span>[文件修改] -&gt; [精确影响分析] -&gt; [模块更新] -&gt; [状态保持]</span></span>
+<span class="line"><span>       ↓</span></span>
+<span class="line"><span>   更新速度与项目规模无关</span></span></code></pre></div><h2 id="功能特性" tabindex="-1">功能特性 <a class="header-anchor" href="#功能特性" aria-label="Permalink to &quot;功能特性&quot;">​</a></h2><h3 id="开箱即用支持" tabindex="-1">开箱即用支持 <a class="header-anchor" href="#开箱即用支持" aria-label="Permalink to &quot;开箱即用支持&quot;">​</a></h3><p>Vite 对现代前端开发中的常用技术提供原生支持。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>内置支持:</span></span>
+<span class="line"><span>- TypeScript</span></span>
+<span class="line"><span>- JSX/TSX</span></span>
+<span class="line"><span>- CSS 预处理器 (Sass, Less)</span></span>
+<span class="line"><span>- PostCSS</span></span>
+<span class="line"><span>- WebAssembly</span></span>
+<span class="line"><span>- 等等</span></span></code></pre></div><h3 id="插件系统" tabindex="-1">插件系统 <a class="header-anchor" href="#插件系统" aria-label="Permalink to &quot;插件系统&quot;">​</a></h3><p>Vite 扩展了 Rollup 插件接口，提供高度可扩展性。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>插件生态:</span></span>
+<span class="line"><span>[Rollup兼容插件] -&gt; [Vite专属插件] -&gt; [框架特定插件]</span></span>
+<span class="line"><span>          ↓</span></span>
+<span class="line"><span>       丰富的功能扩展</span></span></code></pre></div><h2 id="使用方式" tabindex="-1">使用方式 <a class="header-anchor" href="#使用方式" aria-label="Permalink to &quot;使用方式&quot;">​</a></h2><h3 id="快速创建项目" tabindex="-1">快速创建项目 <a class="header-anchor" href="#快速创建项目" aria-label="Permalink to &quot;快速创建项目&quot;">​</a></h3><p>使用 Vite 脚手架快速启动新项目。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>命令示例:</span></span>
+<span class="line"><span>npm create vite@latest</span></span>
+<span class="line"><span>pnpm create vite</span></span>
+<span class="line"><span>yarn create vite</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>项目模板:</span></span>
+<span class="line"><span>vanilla, vanilla-ts, vue, vue-ts, react, react-ts, preact, preact-ts, lit, lit-ts, svelte, svelte-ts</span></span></code></pre></div><h3 id="开发命令" tabindex="-1">开发命令 <a class="header-anchor" href="#开发命令" aria-label="Permalink to &quot;开发命令&quot;">​</a></h3><p>Vite 提供简洁的开发工作流。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>开发流程:</span></span>
+<span class="line"><span>vite dev          # 启动开发服务器</span></span>
+<span class="line"><span>vite build        # 生产构建</span></span>
+<span class="line"><span>vite preview      # 预览生产构建</span></span></code></pre></div><h2 id="技术原理" tabindex="-1">技术原理 <a class="header-anchor" href="#技术原理" aria-label="Permalink to &quot;技术原理&quot;">​</a></h2><h3 id="基于-esm-的开发服务器" tabindex="-1">基于 ESM 的开发服务器 <a class="header-anchor" href="#基于-esm-的开发服务器" aria-label="Permalink to &quot;基于 ESM 的开发服务器&quot;">​</a></h3><p>Vite 开发服务器的核心原理是利用浏览器原生模块系统。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>浏览器模块加载:</span></span>
+<span class="line"><span>index.html -&gt; [script type=&quot;module&quot;] -&gt; 导入 -&gt; \`/src/main.js\` -&gt; 编译转换 -&gt; 返回ESM</span></span>
+<span class="line"><span>                         ↓</span></span>
+<span class="line"><span>               浏览器解析依赖，发送模块请求</span></span></code></pre></div><h3 id="按需编译" tabindex="-1">按需编译 <a class="header-anchor" href="#按需编译" aria-label="Permalink to &quot;按需编译&quot;">​</a></h3><p>Vite 只在浏览器请求模块时才进行编译转换，避免不必要的构建工作。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>请求处理:</span></span>
+<span class="line"><span>浏览器请求 \`/src/App.vue\` -&gt; Vite拦截 -&gt; 编译SFC -&gt; 返回JavaScript</span></span>
+<span class="line"><span>                    ↓</span></span>
+<span class="line"><span>             仅编译被请求的模块</span></span></code></pre></div><h2 id="生态系统" tabindex="-1">生态系统 <a class="header-anchor" href="#生态系统" aria-label="Permalink to &quot;生态系统&quot;">​</a></h2><h3 id="框架支持" tabindex="-1">框架支持 <a class="header-anchor" href="#框架支持" aria-label="Permalink to &quot;框架支持&quot;">​</a></h3><p>Vite 与主流前端框架深度集成，成为许多元框架的构建基础。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>框架集成:</span></span>
+<span class="line"><span>- Vue (官方推荐)</span></span>
+<span class="line"><span>- React (Create React App替代方案)</span></span>
+<span class="line"><span>- Svelte</span></span>
+<span class="line"><span>- SolidJS</span></span>
+<span class="line"><span>- Lit</span></span>
+<span class="line"><span>- 以及 Nuxt, SvelteKit, Astro 等元框架</span></span></code></pre></div><h3 id="插件生态" tabindex="-1">插件生态 <a class="header-anchor" href="#插件生态" aria-label="Permalink to &quot;插件生态&quot;">​</a></h3><p>丰富的插件生态系统覆盖各种开发需求。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>常用插件:</span></span>
+<span class="line"><span>- @vitejs/plugin-vue        Vue支持</span></span>
+<span class="line"><span>- @vitejs/plugin-react      React支持</span></span>
+<span class="line"><span>- @vitejs/plugin-legacy     浏览器兼容</span></span>
+<span class="line"><span>- vite-plugin-pwa           PWA支持</span></span>
+<span class="line"><span>- 等等</span></span></code></pre></div><h2 id="配置示例" tabindex="-1">配置示例 <a class="header-anchor" href="#配置示例" aria-label="Permalink to &quot;配置示例&quot;">​</a></h2><h3 id="基础配置" tabindex="-1">基础配置 <a class="header-anchor" href="#基础配置" aria-label="Permalink to &quot;基础配置&quot;">​</a></h3><p>Vite 通过 <code>vite.config.js</code> 文件进行配置，支持 TypeScript 类型提示。</p><div class="language-javascript"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span style="color:#6A737D;">// vite.config.js</span></span>
+<span class="line"><span style="color:#F97583;">export</span><span style="color:#F97583;"> default</span><span style="color:#E1E4E8;"> {</span></span>
+<span class="line"><span style="color:#E1E4E8;">  server: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">    port: </span><span style="color:#79B8FF;">5173</span><span style="color:#E1E4E8;">,        </span><span style="color:#6A737D;">// 默认端口</span></span>
+<span class="line"><span style="color:#E1E4E8;">    host: </span><span style="color:#79B8FF;">true</span></span>
+<span class="line"><span style="color:#E1E4E8;">  },</span></span>
+<span class="line"><span style="color:#E1E4E8;">  build: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">    outDir: </span><span style="color:#9ECBFF;">&#39;dist&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">    sourcemap: </span><span style="color:#79B8FF;">true</span></span>
+<span class="line"><span style="color:#E1E4E8;">  },</span></span>
+<span class="line"><span style="color:#E1E4E8;">  plugins: [</span></span>
+<span class="line"><span style="color:#6A737D;">    // 插件配置</span></span>
+<span class="line"><span style="color:#E1E4E8;">  ]</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre></div><h2 id="适用场景" tabindex="-1">适用场景 <a class="header-anchor" href="#适用场景" aria-label="Permalink to &quot;适用场景&quot;">​</a></h2><h3 id="理想使用场景" tabindex="-1">理想使用场景 <a class="header-anchor" href="#理想使用场景" aria-label="Permalink to &quot;理想使用场景&quot;">​</a></h3><p>Vite 在以下场景中表现尤为出色：</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>推荐场景:</span></span>
+<span class="line"><span>- 现代浏览器项目</span></span>
+<span class="line"><span>- 大型单页应用</span></span>
+<span class="line"><span>- 组件库开发</span></span>
+<span class="line"><span>- 原型快速开发</span></span>
+<span class="line"><span>- 教学演示项目</span></span></code></pre></div><h3 id="注意事项" tabindex="-1">注意事项 <a class="header-anchor" href="#注意事项" aria-label="Permalink to &quot;注意事项&quot;">​</a></h3><p>在某些场景下可能需要考虑兼容性方案。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code" tabindex="0"><code><span class="line"><span>注意事项:</span></span>
+<span class="line"><span>- 传统浏览器支持需要插件</span></span>
+<span class="line"><span>- 某些旧依赖可能需要额外配置</span></span>
+<span class="line"><span>- 生产环境与开发环境差异处理</span></span></code></pre></div>`,63)])])}const g=s(p,[["render",i]]);export{u as __pageData,g as default};
